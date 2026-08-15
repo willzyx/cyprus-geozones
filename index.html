@@ -82,6 +82,12 @@
     #locate-btn:active { background: #125ea3; }
 
     .leaflet-popup-content { max-width: 260px; max-height: 200px; overflow-y: auto; font-size: 13px; }
+
+    .leaflet-control-attribution {
+      max-width: 60vw;
+      white-space: normal;
+      font-size: 11px;
+    }
   </style>
 </head>
 <body>
@@ -100,12 +106,12 @@
     var CYPRUS_CENTER = [35.05, 33.2];
     var KML_URL = 'CYPRUS_GEO_ZONES_MAP_ver09.kml';
 
-    var map = L.map('map', { zoomControl: true }).setView(CYPRUS_CENTER, 9);
-    map.attributionControl.setPosition('topright');
+    var map = L.map('map', { zoomControl: true, attributionControl: false }).setView(CYPRUS_CENTER, 9);
+    L.control.attribution({ position: 'topright', prefix: false }).addTo(map);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' +
-        ' | Geozones source: <a href="https://drones.gov.cy/geo-zones-map/" target="_blank" rel="noopener">drones.gov.cy</a>'
+        ' | <a href="https://drones.gov.cy/geo-zones-map/" target="_blank" rel="noopener">drones.gov.cy</a>'
     }).addTo(map);
 
     var zonesLayerGroup = L.layerGroup().addTo(map);
