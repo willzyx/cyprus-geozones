@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -76,9 +76,9 @@
 </head>
 <body>
   <div id="map"></div>
-  <button id="locate-btn" title="Показать моё местоположение">📍</button>
+  <button id="locate-btn" title="Show my location">📍</button>
   <div id="panel">
-    <div id="panel-content">Загрузка геозон…</div>
+    <div id="panel-content">Loading geozones…</div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -184,7 +184,7 @@
 
         Array.prototype.forEach.call(folderEl.getElementsByTagName('Placemark'), function (pmEl) {
           var pmNameEl = pmEl.getElementsByTagName('name')[0];
-          var name = pmNameEl ? pmNameEl.textContent.trim() : 'Без названия';
+          var name = pmNameEl ? pmNameEl.textContent.trim() : 'Unnamed';
 
           var descEl = pmEl.getElementsByTagName('description')[0];
           var description = descEl ? descEl.textContent.trim() : '';
@@ -258,17 +258,17 @@
     }
 
     function formatDistance(meters) {
-      if (meters < 1000) return Math.round(meters) + ' м';
-      return (meters / 1000).toFixed(2) + ' км';
+      if (meters < 1000) return Math.round(meters) + ' m';
+      return (meters / 1000).toFixed(2) + ' km';
     }
 
     function renderPanel(zone, distance, inside) {
       if (!zone) {
-        panelContent.innerHTML = '<div class="hint">Геозоны не найдены.</div>';
+        panelContent.innerHTML = '<div class="hint">No geozones found.</div>';
         return;
       }
       var distClass = inside ? 'inside' : 'outside';
-      var distText = inside ? 'Вы внутри зоны' : formatDistance(distance) + ' до зоны';
+      var distText = inside ? 'You are inside the zone' : formatDistance(distance) + ' to zone';
       panelContent.innerHTML =
         '<span class="category">' + escapeHtml(zone.category) + '</span>' +
         '<h2>' + escapeHtml(zone.name) + '</h2>' +
@@ -325,12 +325,12 @@
     }
 
     function onPositionError(err) {
-      showStatus('Геолокация недоступна: ' + err.message);
+      showStatus('Geolocation unavailable: ' + err.message);
     }
 
     function startGeolocation() {
       if (!navigator.geolocation) {
-        showStatus('Ваш браузер не поддерживает геолокацию.');
+        showStatus('Your browser does not support geolocation.');
         return;
       }
       navigator.geolocation.watchPosition(onPosition, onPositionError, {
@@ -356,15 +356,15 @@
       .then(function (text) {
         var xml = new DOMParser().parseFromString(text, 'text/xml');
         if (xml.getElementsByTagName('parsererror')[0]) {
-          throw new Error('Ошибка парсинга KML');
+          throw new Error('Failed to parse KML');
         }
         zones = parseKML(xml);
         renderZones(zones);
-        showStatus('Геозоны загружены (' + zones.length + '). Ожидание геолокации…');
+        showStatus('Geozones loaded (' + zones.length + '). Waiting for geolocation…');
         startGeolocation();
       })
       .catch(function (err) {
-        showStatus('Не удалось загрузить геозоны: ' + err.message);
+        showStatus('Failed to load geozones: ' + err.message);
       });
   })();
   </script>
