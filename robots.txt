@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://willzyx.github.io/cyprus-geozones/sitemap.xml
