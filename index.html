@@ -1,11 +1,372 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Cyprus Geozones</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Cyprus Geozones</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    html, body { height: 100%; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+    #map { position: absolute; inset: 0; }
+
+    #panel {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 1000;
+      background: rgba(20, 22, 26, 0.92);
+      color: #f2f2f2;
+      border-radius: 12px;
+      padding: 12px 14px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+      font-size: 14px;
+      line-height: 1.4;
+      max-width: 420px;
+    }
+    #panel h2 {
+      margin: 0 0 4px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    #panel .category {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 1px 6px;
+      border-radius: 4px;
+      background: #444;
+      margin-bottom: 6px;
+    }
+    #panel .distance {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    #panel .distance.inside { color: #ff5252; }
+    #panel .distance.outside { color: #4fc3f7; }
+    #panel .status {
+      color: #ffb74d;
+    }
+    #panel .hint {
+      color: #9e9e9e;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    #locate-btn {
+      position: absolute;
+      right: 12px;
+      bottom: 130px;
+      z-index: 1000;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: none;
+      background: #1976d2;
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      cursor: pointer;
+    }
+    #locate-btn:active { background: #125ea3; }
+
+    .leaflet-popup-content { max-width: 260px; max-height: 200px; overflow-y: auto; font-size: 13px; }
+  </style>
 </head>
 <body>
-    <h1>Cyprus Geozones</h1>
-    <p>GitHub Pages работает 🎉</p>
+  <div id="map"></div>
+  <button id="locate-btn" title="Показать моё местоположение">📍</button>
+  <div id="panel">
+    <div id="panel-content">Загрузка геозон…</div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  <script>
+  (function () {
+    'use strict';
+
+    var CYPRUS_CENTER = [35.05, 33.2];
+    var KML_URL = 'CYPRUS_GEO_ZONES_MAP_ver09.kml';
+
+    var map = L.map('map', { zoomControl: true }).setView(CYPRUS_CENTER, 9);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var zonesLayerGroup = L.layerGroup().addTo(map);
+    var panelContent = document.getElementById('panel-content');
+    var locateBtn = document.getElementById('locate-btn');
+
+    var zones = [];
+    var currentNearest = null;
+    var userMarker = null;
+    var accuracyCircle = null;
+    var lastPosition = null;
+
+    function escapeHtml(str) {
+      var div = document.createElement('div');
+      div.textContent = str == null ? '' : str;
+      return div.innerHTML;
+    }
+
+    function kmlColorToRgba(kmlColor) {
+      if (!kmlColor || kmlColor.length < 8) return null;
+      var aa = kmlColor.substr(0, 2);
+      var bb = kmlColor.substr(2, 2);
+      var gg = kmlColor.substr(4, 2);
+      var rr = kmlColor.substr(6, 2);
+      return {
+        color: '#' + rr + gg + bb,
+        opacity: parseInt(aa, 16) / 255
+      };
+    }
+
+    function buildStyleIndex(xml) {
+      var styles = {};
+      Array.prototype.forEach.call(xml.getElementsByTagName('Style'), function (styleEl) {
+        var id = styleEl.getAttribute('id');
+        if (!id) return;
+        var entry = {};
+        var poly = styleEl.getElementsByTagName('PolyStyle')[0];
+        var line = styleEl.getElementsByTagName('LineStyle')[0];
+        if (poly) {
+          var polyColorEl = poly.getElementsByTagName('color')[0];
+          if (polyColorEl) {
+            var rgba = kmlColorToRgba(polyColorEl.textContent.trim());
+            if (rgba) {
+              entry.fillColor = rgba.color;
+              entry.fillOpacity = rgba.opacity;
+            }
+          }
+        }
+        if (line) {
+          var lineColorEl = line.getElementsByTagName('color')[0];
+          if (lineColorEl) {
+            var lrgba = kmlColorToRgba(lineColorEl.textContent.trim());
+            if (lrgba) entry.strokeColor = lrgba.color;
+          }
+        }
+        styles[id] = entry;
+      });
+
+      var styleMaps = {};
+      Array.prototype.forEach.call(xml.getElementsByTagName('StyleMap'), function (smEl) {
+        var id = smEl.getAttribute('id');
+        if (!id) return;
+        Array.prototype.forEach.call(smEl.getElementsByTagName('Pair'), function (pairEl) {
+          var keyEl = pairEl.getElementsByTagName('key')[0];
+          var urlEl = pairEl.getElementsByTagName('styleUrl')[0];
+          if (keyEl && urlEl && keyEl.textContent.trim() === 'normal') {
+            styleMaps[id] = urlEl.textContent.trim().replace('#', '');
+          }
+        });
+      });
+
+      return { styles: styles, styleMaps: styleMaps };
+    }
+
+    function resolveStyle(styleIndex, styleUrlRaw) {
+      var id = (styleUrlRaw || '').trim().replace('#', '');
+      var resolvedId = styleIndex.styleMaps[id] || id;
+      return styleIndex.styles[resolvedId] || {};
+    }
+
+    function parseKML(xml) {
+      var styleIndex = buildStyleIndex(xml);
+      var result = [];
+
+      Array.prototype.forEach.call(xml.getElementsByTagName('Folder'), function (folderEl) {
+        var nameEl = folderEl.getElementsByTagName('name')[0];
+        var category = nameEl ? nameEl.textContent.trim() : 'ZONE';
+
+        Array.prototype.forEach.call(folderEl.getElementsByTagName('Placemark'), function (pmEl) {
+          var pmNameEl = pmEl.getElementsByTagName('name')[0];
+          var name = pmNameEl ? pmNameEl.textContent.trim() : 'Без названия';
+
+          var descEl = pmEl.getElementsByTagName('description')[0];
+          var description = descEl ? descEl.textContent.trim() : '';
+
+          var styleUrlEl = pmEl.getElementsByTagName('styleUrl')[0];
+          var style = styleUrlEl ? resolveStyle(styleIndex, styleUrlEl.textContent) : {};
+
+          var coordsEl = pmEl.getElementsByTagName('coordinates')[0];
+          if (!coordsEl) return;
+
+          var points = coordsEl.textContent.trim().split(/\s+/).map(function (triplet) {
+            var parts = triplet.split(',');
+            return [parseFloat(parts[0]), parseFloat(parts[1])];
+          }).filter(function (p) { return !isNaN(p[0]) && !isNaN(p[1]); });
+
+          if (points.length < 3) return;
+
+          var ring = points.slice();
+          var first = ring[0], last = ring[ring.length - 1];
+          if (first[0] !== last[0] || first[1] !== last[1]) ring.push(first);
+
+          var latlngs = points.map(function (p) { return [p[1], p[0]]; });
+
+          result.push({
+            name: name,
+            category: category,
+            description: description,
+            fillColor: style.fillColor || '#3388ff',
+            fillOpacity: style.fillOpacity != null ? style.fillOpacity : 0.4,
+            strokeColor: style.strokeColor || style.fillColor || '#3388ff',
+            latlngs: latlngs,
+            ring: ring
+          });
+        });
+      });
+
+      return result;
+    }
+
+    function renderZones(zoneList) {
+      zoneList.forEach(function (zone) {
+        zone.layer = L.polygon(zone.latlngs, {
+          color: zone.strokeColor,
+          weight: 1,
+          fillColor: zone.fillColor,
+          fillOpacity: zone.fillOpacity
+        }).addTo(zonesLayerGroup);
+
+        var popupHtml = '<strong>' + escapeHtml(zone.name) + '</strong><br>' +
+          '<em>' + escapeHtml(zone.category) + '</em>';
+        if (zone.description) {
+          popupHtml += '<hr>' + zone.description;
+        }
+        zone.layer.bindPopup(popupHtml);
+
+        zone.turfPolygon = turf.polygon([zone.ring]);
+        zone.turfLine = turf.lineString(zone.ring);
+      });
+    }
+
+    function setNearest(zone) {
+      if (currentNearest === zone) return;
+      if (currentNearest) {
+        currentNearest.layer.setStyle({ weight: 1, color: currentNearest.strokeColor });
+      }
+      currentNearest = zone;
+      if (zone) {
+        zone.layer.setStyle({ weight: 4, color: '#00e5ff' });
+        zone.layer.bringToFront();
+      }
+    }
+
+    function formatDistance(meters) {
+      if (meters < 1000) return Math.round(meters) + ' м';
+      return (meters / 1000).toFixed(2) + ' км';
+    }
+
+    function renderPanel(zone, distance, inside) {
+      if (!zone) {
+        panelContent.innerHTML = '<div class="hint">Геозоны не найдены.</div>';
+        return;
+      }
+      var distClass = inside ? 'inside' : 'outside';
+      var distText = inside ? 'Вы внутри зоны' : formatDistance(distance) + ' до зоны';
+      panelContent.innerHTML =
+        '<span class="category">' + escapeHtml(zone.category) + '</span>' +
+        '<h2>' + escapeHtml(zone.name) + '</h2>' +
+        '<div class="distance ' + distClass + '">' + distText + '</div>';
+    }
+
+    function showStatus(message) {
+      panelContent.innerHTML = '<div class="status">' + escapeHtml(message) + '</div>';
+    }
+
+    function updateNearestZone(lng, lat) {
+      if (!zones.length) return;
+      var pt = turf.point([lng, lat]);
+      var best = null;
+      var bestDist = Infinity;
+      var inside = false;
+
+      zones.forEach(function (zone) {
+        var d;
+        var isInside = turf.booleanPointInPolygon(pt, zone.turfPolygon);
+        d = isInside ? 0 : turf.pointToLineDistance(pt, zone.turfLine, { units: 'meters' });
+        if (d < bestDist) {
+          bestDist = d;
+          best = zone;
+          inside = isInside;
+        }
+      });
+
+      setNearest(best);
+      renderPanel(best, bestDist, inside);
+    }
+
+    function onPosition(pos) {
+      var lat = pos.coords.latitude;
+      var lng = pos.coords.longitude;
+      var accuracy = pos.coords.accuracy;
+      lastPosition = [lat, lng];
+
+      if (!userMarker) {
+        userMarker = L.circleMarker([lat, lng], {
+          radius: 7, color: '#1976d2', weight: 2, fillColor: '#42a5f5', fillOpacity: 1
+        }).addTo(map);
+        accuracyCircle = L.circle([lat, lng], {
+          radius: accuracy, color: '#1976d2', weight: 1, fillOpacity: 0.08
+        }).addTo(map);
+        map.setView([lat, lng], 13);
+      } else {
+        userMarker.setLatLng([lat, lng]);
+        accuracyCircle.setLatLng([lat, lng]);
+        accuracyCircle.setRadius(accuracy);
+      }
+
+      updateNearestZone(lng, lat);
+    }
+
+    function onPositionError(err) {
+      showStatus('Геолокация недоступна: ' + err.message);
+    }
+
+    function startGeolocation() {
+      if (!navigator.geolocation) {
+        showStatus('Ваш браузер не поддерживает геолокацию.');
+        return;
+      }
+      navigator.geolocation.watchPosition(onPosition, onPositionError, {
+        enableHighAccuracy: true,
+        maximumAge: 5000,
+        timeout: 15000
+      });
+    }
+
+    locateBtn.addEventListener('click', function () {
+      if (lastPosition) {
+        map.setView(lastPosition, 15);
+      } else if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(onPosition, onPositionError, { enableHighAccuracy: true });
+      }
+    });
+
+    fetch(KML_URL)
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function (text) {
+        var xml = new DOMParser().parseFromString(text, 'text/xml');
+        if (xml.getElementsByTagName('parsererror')[0]) {
+          throw new Error('Ошибка парсинга KML');
+        }
+        zones = parseKML(xml);
+        renderZones(zones);
+        showStatus('Геозоны загружены (' + zones.length + '). Ожидание геолокации…');
+        startGeolocation();
+      })
+      .catch(function (err) {
+        showStatus('Не удалось загрузить геозоны: ' + err.message);
+      });
+  })();
+  </script>
 </body>
 </html>
