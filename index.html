@@ -348,10 +348,10 @@
 
       if (!userMarker) {
         userMarker = L.circleMarker([lat, lng], {
-          radius: 7, color: '#1976d2', weight: 2, fillColor: '#42a5f5', fillOpacity: 1
+          radius: 7, color: '#1976d2', weight: 2, fillColor: '#42a5f5', fillOpacity: 1, interactive: false
         }).addTo(map);
         accuracyCircle = L.circle([lat, lng], {
-          radius: accuracy, color: '#1976d2', weight: 1, fillOpacity: 0.08
+          radius: accuracy, color: '#1976d2', weight: 1, fillOpacity: 0.08, interactive: false
         }).addTo(map);
         map.setView([lat, lng], 13);
       } else {
