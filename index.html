@@ -105,6 +105,7 @@
 
     var CYPRUS_CENTER = [35.05, 33.2];
     var KML_URL = 'CYPRUS_GEO_ZONES_MAP_ver09.kml';
+    var TRANSLATIONS_URL = 'zones-en.json';
 
     var map = L.map('map', { zoomControl: true, attributionControl: false }).setView(CYPRUS_CENTER, 9);
     L.control.attribution({ position: 'topright', prefix: false }).addTo(map);
@@ -192,9 +193,25 @@
       return styleIndex.styles[resolvedId] || {};
     }
 
-    function parseKML(xml) {
+    function buildTranslationIndex(entries) {
+      var index = Object.create(null);
+      entries.forEach(function (entry) {
+        index[entry.original] = entry.translation;
+      });
+      return index;
+    }
+
+    function parseKML(xml, translations) {
       var styleIndex = buildStyleIndex(xml);
       var result = [];
+      var untranslated = [];
+
+      function translate(text) {
+        if (!text) return text;
+        if (text in translations) return translations[text];
+        if (untranslated.indexOf(text) === -1) untranslated.push(text);
+        return text;
+      }
 
       Array.prototype.forEach.call(xml.getElementsByTagName('Folder'), function (folderEl) {
         var nameEl = folderEl.getElementsByTagName('name')[0];
@@ -202,10 +219,10 @@
 
         Array.prototype.forEach.call(folderEl.getElementsByTagName('Placemark'), function (pmEl) {
           var pmNameEl = pmEl.getElementsByTagName('name')[0];
-          var name = pmNameEl ? pmNameEl.textContent.trim() : 'Unnamed';
+          var name = pmNameEl ? translate(pmNameEl.textContent.trim()) : 'Unnamed';
 
           var descEl = pmEl.getElementsByTagName('description')[0];
-          var description = descEl ? descEl.textContent.trim() : '';
+          var description = descEl ? translate(descEl.textContent.trim()) : '';
 
           var styleUrlEl = pmEl.getElementsByTagName('styleUrl')[0];
           var style = styleUrlEl ? resolveStyle(styleIndex, styleUrlEl.textContent) : {};
@@ -238,6 +255,10 @@
           });
         });
       });
+
+      if (untranslated.length) {
+        console.warn('No English translation in ' + TRANSLATIONS_URL + ' for:', untranslated);
+      }
 
       return result;
     }
@@ -366,17 +387,29 @@
       }
     });
 
-    fetch(KML_URL)
-      .then(function (r) {
+    Promise.all([
+      fetch(KML_URL).then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.text();
-      })
-      .then(function (text) {
+      }),
+      fetch(TRANSLATIONS_URL)
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .catch(function (err) {
+          console.warn('Failed to load ' + TRANSLATIONS_URL + ', showing original text: ' + err.message);
+          return [];
+        })
+    ])
+      .then(function (results) {
+        var text = results[0];
+        var translations = buildTranslationIndex(results[1]);
         var xml = new DOMParser().parseFromString(text, 'text/xml');
         if (xml.getElementsByTagName('parsererror')[0]) {
           throw new Error('Failed to parse KML');
         }
-        zones = parseKML(xml);
+        zones = parseKML(xml, translations);
         renderZones(zones);
         showStatus('Geozones loaded (' + zones.length + '). Waiting for geolocation…');
         startGeolocation();

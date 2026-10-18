@@ -1,0 +1,830 @@
+[
+  {
+    "original": "001 - Αγκυροβόλιο Μονής",
+    "translation": "001 - Moni Anchorage"
+  },
+  {
+    "original": "002 - ΑΗΚ - Άγιος Νικόλαος",
+    "translation": "002 - EAC - Agios Nikolaos"
+  },
+  {
+    "original": "003 - ΑΗΚ - Αγία Φύλα",
+    "translation": "003 - EAC - Agia Fyla"
+  },
+  {
+    "original": "004 - ΑΗΚ - Αθαλάσσα",
+    "translation": "004 - EAC - Athalassa"
+  },
+  {
+    "original": "005 - ΑΗΚ - Αθηένου",
+    "translation": "005 - EAC - Athienou"
+  },
+  {
+    "original": "006 - ΑΗΚ - Ακέξιγρος",
+    "translation": "006 - EAC - Akexigros"
+  },
+  {
+    "original": "007 - ΑΗΚ - Αλάμπρα",
+    "translation": "007 - EAC - Alampra"
+  },
+  {
+    "original": "008 - ΑΗΚ - Αραδίππου",
+    "translation": "008 - EAC - Aradippou"
+  },
+  {
+    "original": "009 - ΑΗΚ - Αφροδίτη",
+    "translation": "009 - EAC - Aphrodite"
+  },
+  {
+    "original": "010 - ΑΗΚ - Γερμασόγια",
+    "translation": "010 - EAC - Germasogeia"
+  },
+  {
+    "original": "011 - ΑΗΚ - Επισκοπή",
+    "translation": "011 - EAC - Episkopi"
+  },
+  {
+    "original": "012 - ΑΗΚ - Εργάτες",
+    "translation": "012 - EAC - Ergates"
+  },
+  {
+    "original": "013 - ΑΗΚ - Ζώνη Ε.Β",
+    "translation": "013 - EAC - Zone E.B"
+  },
+  {
+    "original": "014 - ΑΗΚ - Η/Σ Δεκέλια",
+    "translation": "014 - EAC - Dhekelia Power Station"
+  },
+  {
+    "original": "015 - ΑΗΚ - Κοκκινοτριμιθιά",
+    "translation": "015 - EAC - Kokkinotrimithia"
+  },
+  {
+    "original": "016 - ΑΗΚ - Κολόσσι",
+    "translation": "016 - EAC - Kolossi"
+  },
+  {
+    "original": "017 - ΑΗΚ - Κοφίνου",
+    "translation": "017 - EAC - Kofinou"
+  },
+  {
+    "original": "018 - ΑΗΚ - ΚΤΥ Λεμεσού (Ύψωνας)",
+    "translation": "018 - EAC - KTY Limassol (Ypsonas)"
+  },
+  {
+    "original": "019 - ΑΗΚ - ΚΤΥ Λευκωσία",
+    "translation": "019 - EAC - KTY Nicosia"
+  },
+  {
+    "original": "020 - ΑΗΚ - ΚΤΥ Πόλις Χρυσοχούς",
+    "translation": "020 - EAC - KTY Polis Chrysochous"
+  },
+  {
+    "original": "021 - ΑΗΚ - Κώστας Πέτρου",
+    "translation": "021 - EAC - Kostas Petrou"
+  },
+  {
+    "original": "022 - ΑΗΚ - Λάρνακα",
+    "translation": "022 - EAC - Larnaca"
+  },
+  {
+    "original": "023 - ΑΗΚ - Λατσιά",
+    "translation": "023 - EAC - Latsia"
+  },
+  {
+    "original": "024 - ΑΗΚ - Λακατάμια",
+    "translation": "024 - EAC - Lakatamia"
+  },
+  {
+    "original": "025 - ΑΗΚ - Μαρί",
+    "translation": "025 - EAC - Mari"
+  },
+  {
+    "original": "026 - ΑΗΚ - Νέα Τριμίκλινι",
+    "translation": "026 - EAC - Nea Trimiklini"
+  },
+  {
+    "original": "027 - ΑΗΚ - Ορίτες",
+    "translation": "027 - EAC - Orites"
+  },
+  {
+    "original": "028 - ΑΗΚ - Ορούντα",
+    "translation": "028 - EAC - Orounta"
+  },
+  {
+    "original": "029 - ΑΗΚ - Πισσούρι",
+    "translation": "029 - EAC - Pissouri"
+  },
+  {
+    "original": "030 - ΑΗΚ - Πολεμίδια",
+    "translation": "030 - EAC - Polemidia"
+  },
+  {
+    "original": "031 - ΑΗΚ - Πόλις Χρυσοχούς",
+    "translation": "031 - EAC - Polis Chrysochous"
+  },
+  {
+    "original": "032 - ΑΗΚ - Πύλα",
+    "translation": "032 - EAC - Pyla"
+  },
+  {
+    "original": "033 - ΑΗΚ - Στρουμπί",
+    "translation": "033 - EAC - Stroumpi"
+  },
+  {
+    "original": "034 - ΑΗΚ - Σωτήρα",
+    "translation": "034 - EAC - Sotira"
+  },
+  {
+    "original": "035 - ΑΗΚ - Τεμβριά",
+    "translation": "035 - EAC - Temvria"
+  },
+  {
+    "original": "036 - ΑΗΚ - Χατζηπασχάλης",
+    "translation": "036 - EAC - Chatzipaschalis"
+  },
+  {
+    "original": "037 - ΑΗΚ - Ψευδάς",
+    "translation": "037 - EAC - Psevdas"
+  },
+  {
+    "original": "038 - ΑΗΚ - Ύψωνας",
+    "translation": "038 - EAC - Ypsonas"
+  },
+  {
+    "original": "039 - ΑΗΚ- Δρόμος Ακουρσού",
+    "translation": "039 - EAC - Akoursos Road"
+  },
+  {
+    "original": "040 - Γενικό Νοσοκομείο Αμμοχώστου",
+    "translation": "040 - Famagusta General Hospital"
+  },
+  {
+    "original": "041 - Γενικό Νοσοκομείο Λεμεσού",
+    "translation": "041 - Limassol General Hospital"
+  },
+  {
+    "original": "042 - Γενικό Νοσοκομείο Πάφου",
+    "translation": "042 - Paphos General Hospital"
+  },
+  {
+    "original": "043 - Διεθνής Αερολιμένας Πάφου - B",
+    "translation": "043 - Paphos International Airport - B"
+  },
+  {
+    "original": "044 - Δορυφορικός Σταθμός Μακάριος",
+    "translation": "044 - Makarios Satellite Earth Station"
+  },
+  {
+    "original": "045 - ΕΦ001",
+    "translation": "045 - EF001 (National Guard)"
+  },
+  {
+    "original": "046 - ΕΦ002",
+    "translation": "046 - EF002 (National Guard)"
+  },
+  {
+    "original": "047 - ΕΦ003",
+    "translation": "047 - EF003 (National Guard)"
+  },
+  {
+    "original": "048 - ΕΦ004",
+    "translation": "048 - EF004 (National Guard)"
+  },
+  {
+    "original": "049 - ΕΦ005",
+    "translation": "049 - EF005 (National Guard)"
+  },
+  {
+    "original": "050 - ΕΦ006",
+    "translation": "050 - EF006 (National Guard)"
+  },
+  {
+    "original": "051 - ΕΦ007",
+    "translation": "051 - EF007 (National Guard)"
+  },
+  {
+    "original": "052 - ΕΦ008",
+    "translation": "052 - EF008 (National Guard)"
+  },
+  {
+    "original": "053 - ΕΦ009",
+    "translation": "053 - EF009 (National Guard)"
+  },
+  {
+    "original": "054 - ΕΦ010",
+    "translation": "054 - EF010 (National Guard)"
+  },
+  {
+    "original": "055 - ΕΦ011",
+    "translation": "055 - EF011 (National Guard)"
+  },
+  {
+    "original": "056 - ΕΦ012",
+    "translation": "056 - EF012 (National Guard)"
+  },
+  {
+    "original": "057 - ΕΦ013",
+    "translation": "057 - EF013 (National Guard)"
+  },
+  {
+    "original": "058 - ΕΦ014",
+    "translation": "058 - EF014 (National Guard)"
+  },
+  {
+    "original": "059 - ΕΦ015",
+    "translation": "059 - EF015 (National Guard)"
+  },
+  {
+    "original": "060 - ΕΦ016",
+    "translation": "060 - EF016 (National Guard)"
+  },
+  {
+    "original": "061 - ΕΦ017",
+    "translation": "061 - EF017 (National Guard)"
+  },
+  {
+    "original": "062 - ΕΦ018",
+    "translation": "062 - EF018 (National Guard)"
+  },
+  {
+    "original": "063 - ΕΦ019",
+    "translation": "063 - EF019 (National Guard)"
+  },
+  {
+    "original": "064 - ΕΦ020",
+    "translation": "064 - EF020 (National Guard)"
+  },
+  {
+    "original": "065 - ΕΦ022",
+    "translation": "065 - EF022 (National Guard)"
+  },
+  {
+    "original": "066 - ΕΦ023",
+    "translation": "066 - EF023 (National Guard)"
+  },
+  {
+    "original": "067 - ΕΦ024",
+    "translation": "067 - EF024 (National Guard)"
+  },
+  {
+    "original": "068 - ΕΦ025",
+    "translation": "068 - EF025 (National Guard)"
+  },
+  {
+    "original": "069 - ΕΦ026",
+    "translation": "069 - EF026 (National Guard)"
+  },
+  {
+    "original": "070 - ΕΦ027",
+    "translation": "070 - EF027 (National Guard)"
+  },
+  {
+    "original": "071 - ΕΦ028",
+    "translation": "071 - EF028 (National Guard)"
+  },
+  {
+    "original": "072 - ΕΦ029",
+    "translation": "072 - EF029 (National Guard)"
+  },
+  {
+    "original": "073 - ΕΦ030",
+    "translation": "073 - EF030 (National Guard)"
+  },
+  {
+    "original": "074 - ΕΦ031",
+    "translation": "074 - EF031 (National Guard)"
+  },
+  {
+    "original": "075 - ΕΦ032",
+    "translation": "075 - EF032 (National Guard)"
+  },
+  {
+    "original": "076 - ΕΦ033",
+    "translation": "076 - EF033 (National Guard)"
+  },
+  {
+    "original": "077 - ΕΦ034",
+    "translation": "077 - EF034 (National Guard)"
+  },
+  {
+    "original": "078 - ΕΦ035",
+    "translation": "078 - EF035 (National Guard)"
+  },
+  {
+    "original": "079 - ΕΦ036",
+    "translation": "079 - EF036 (National Guard)"
+  },
+  {
+    "original": "080 - ΕΦ037",
+    "translation": "080 - EF037 (National Guard)"
+  },
+  {
+    "original": "081 - ΕΦ040",
+    "translation": "081 - EF040 (National Guard)"
+  },
+  {
+    "original": "082 - ΕΦ041",
+    "translation": "082 - EF041 (National Guard)"
+  },
+  {
+    "original": "083 - ΕΦ042",
+    "translation": "083 - EF042 (National Guard)"
+  },
+  {
+    "original": "084 - ΕΦ043",
+    "translation": "084 - EF043 (National Guard)"
+  },
+  {
+    "original": "085 - ΕΦ044",
+    "translation": "085 - EF044 (National Guard)"
+  },
+  {
+    "original": "086 - Κεντρικές Φυλακές",
+    "translation": "086 - Central Prisons"
+  },
+  {
+    "original": "087 - Λιμάνι Λάρνακας",
+    "translation": "087 - Larnaca Port"
+  },
+  {
+    "original": "088 - Λιμάνι Λεμεσού",
+    "translation": "088 - Limassol Port"
+  },
+  {
+    "original": "089 - Οικία Προέδρου Βουλής",
+    "translation": "089 - Residence of the President of the House of Representatives"
+  },
+  {
+    "original": "090 - Πρεσβεία - Βρετανική Ύπατη Αρμοστεία",
+    "translation": "090 - Embassy - British High Commission"
+  },
+  {
+    "original": "091 - Πρεσβεία Αιγύπτου",
+    "translation": "091 - Embassy of Egypt"
+  },
+  {
+    "original": "092 - Πρεσβεία ΗΠΑ",
+    "translation": "092 - Embassy of the United States"
+  },
+  {
+    "original": "093 - Πρεσβεία Ιράν",
+    "translation": "093 - Embassy of Iran"
+  },
+  {
+    "original": "094 - Πρεσβεία Ισραήλ",
+    "translation": "094 - Embassy of Israel"
+  },
+  {
+    "original": "095 - Πρεσβεία Κατάρ",
+    "translation": "095 - Embassy of Qatar"
+  },
+  {
+    "original": "096 - Πρεσβεία Λαικής Δημοκρατίας Κίνας",
+    "translation": "096 - Embassy of the People's Republic of China"
+  },
+  {
+    "original": "097 - Πρεσβεία Ρωσίας",
+    "translation": "097 - Embassy of Russia"
+  },
+  {
+    "original": "098 - Προαναχωρησιακό κέντρο «Λίμνες»",
+    "translation": "098 - \"Limnes\" Pre-Departure Centre"
+  },
+  {
+    "original": "099 - Προεδρικη Κατοικία Τροόδους",
+    "translation": "099 - Troodos Presidential Residence"
+  },
+  {
+    "original": "100 - ΑΗΚ - Ανατολικό",
+    "translation": "100 - EAC - Anatoliko"
+  },
+  {
+    "original": "101 - ΑΗΚ - Η/Σ Μονή",
+    "translation": "101 - EAC - Moni Power Station"
+  },
+  {
+    "original": "102 - ΑΗΚ - Καρβουνάς",
+    "translation": "102 - EAC - Karvounas"
+  },
+  {
+    "original": "103 - ΑΗΚ - Πρωταράς",
+    "translation": "103 - EAC - Protaras"
+  },
+  {
+    "original": "104 - ΑΗΚ - Ξεροπόταμος",
+    "translation": "104 - EAC - Xeropotamos"
+  },
+  {
+    "original": "105 - ΑΗΚ - Πύργος",
+    "translation": "105 - EAC - Pyrgos"
+  },
+  {
+    "original": "106 - ΑΗΚ - ΚΤΥ Αγία Βαρβάρα",
+    "translation": "106 - EAC - KTY Agia Varvara"
+  },
+  {
+    "original": "107 - Γενικό Νοσοκομείο Λευκωσίας",
+    "translation": "107 - Nicosia General Hospital"
+  },
+  {
+    "original": "108 - Διεθνής Αερολιμένας Λάρνακας - Β",
+    "translation": "108 - Larnaca International Airport - B"
+  },
+  {
+    "original": "109 - Διεύθυνση Υπηρεσιών Ψυχικής Υγείας",
+    "translation": "109 - Mental Health Services Directorate"
+  },
+  {
+    "original": "110 - Λιμάνι Ζυγίου",
+    "translation": "110 - Zygi Port"
+  },
+  {
+    "original": "111 - ΑΔΕ Αμμοχώστου",
+    "translation": "111 - Famagusta District Police HQ"
+  },
+  {
+    "original": "112 - ΑΔΕ Λάρνακας",
+    "translation": "112 - Larnaca District Police HQ"
+  },
+  {
+    "original": "113 - ΑΔΕ Λεμεσού",
+    "translation": "113 - Limassol District Police HQ"
+  },
+  {
+    "original": "114 - ΑΔΕ Λευκωσίας",
+    "translation": "114 - Nicosia District Police HQ"
+  },
+  {
+    "original": "115 - ΑΔΕ Μόρφου",
+    "translation": "115 - Morphou District Police HQ"
+  },
+  {
+    "original": "116 - ΑΔΕ Πάφου",
+    "translation": "116 - Paphos District Police HQ"
+  },
+  {
+    "original": "117 - Αρχηγείο Αστυνομίας",
+    "translation": "117 - Police Headquarters"
+  },
+  {
+    "original": "118 - Αστυν. Σταθμός Αγίας Νάπας",
+    "translation": "118 - Ayia Napa Police Station"
+  },
+  {
+    "original": "119 - Αστυν. Σταθμός Αγίου Δομετίου",
+    "translation": "119 - Agios Dometios Police Station"
+  },
+  {
+    "original": "120 - Αστυν. Σταθμός Αραδίππου",
+    "translation": "120 - Aradippou Police Station"
+  },
+  {
+    "original": "121 - Αστυν. Σταθμός Γερμασόγειας",
+    "translation": "121 - Germasogeia Police Station"
+  },
+  {
+    "original": "122 - Αστυν. Σταθμός Κοφίνου",
+    "translation": "122 - Kofinou Police Station"
+  },
+  {
+    "original": "123 - Αστυν. Σταθμός Λακατάμιας",
+    "translation": "123 - Lakatamia Police Station"
+  },
+  {
+    "original": "124 - Αστυν. Σταθμός Ορόκλινης",
+    "translation": "124 - Oroklini Police Station"
+  },
+  {
+    "original": "125 - Αστυν. Σταθμός Πέρα Χωρίου Νήσου",
+    "translation": "125 - Pera Chorio Nisou Police Station"
+  },
+  {
+    "original": "126 - Αστυν. Σταθμός Περιστερώνας",
+    "translation": "126 - Peristerona Police Station"
+  },
+  {
+    "original": "127 - Αστυν. Σταθμός Πόλις Χρυσοχούς",
+    "translation": "127 - Polis Chrysochous Police Station"
+  },
+  {
+    "original": "128 - Βουλή των Αντιπροσώπων",
+    "translation": "128 - House of Representatives"
+  },
+  {
+    "original": "129 - Ενεργειακό Κέντρο Βασιλικού",
+    "translation": "129 - Vasilikos Energy Centre"
+  },
+  {
+    "original": "130 - ΕΦ038",
+    "translation": "130 - EF038 (National Guard)"
+  },
+  {
+    "original": "131 - ΕΦ039",
+    "translation": "131 - EF039 (National Guard)"
+  },
+  {
+    "original": "132 - Κεντρικός Αστυν. Σταθμός Λευκωσίας",
+    "translation": "132 - Nicosia Central Police Station"
+  },
+  {
+    "original": "133 - Κρατητήρια Μενόγειας",
+    "translation": "133 - Menogeia Detention Centre"
+  },
+  {
+    "original": "134 - Κτίριο Δ.Ε.Ε. & Δ.Α.Σ.",
+    "translation": "134 - EU & International Police Cooperation Directorate Building"
+  },
+  {
+    "original": "135 - Παλαιά ΑΔΕ Λευκωσίας",
+    "translation": "135 - Old Nicosia District Police HQ"
+  },
+  {
+    "original": "136 - Προεδρικό Μέγαρο",
+    "translation": "136 - Presidential Palace"
+  },
+  {
+    "original": "137 - Διεθνής Αερολιμένας Λάρνακας - A",
+    "translation": "137 - Larnaca International Airport - A"
+  },
+  {
+    "original": "138 - Διεθνής Αερολιμένας Πάφου - Α",
+    "translation": "138 - Paphos International Airport - A"
+  },
+  {
+    "original": "139 - ΑΗΚ - Η/Σ Βασιλικό",
+    "translation": "139 - EAC - Vasilikos Power Station"
+  },
+  {
+    "original": "140 - ΕΦ021",
+    "translation": "140 - EF021 (National Guard)"
+  },
+  {
+    "original": "141 - Πρεσβεία Ελλάδας",
+    "translation": "141 - Embassy of Greece"
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Αρχή Λιμένων Κύπρου<br><br>Τηλέφωνο Επικοινωνίας: 24815225 / 99628038<br><br>Ηλεκτρονική Διεύθυνση: chatheocharous@cpa.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ.                                                                                            <br>Πτήσεις sσε αυτήν την περιοχή μπορούν να πραγματοποιηθούν κατόπιν ειδικής άδειας από την αρχή Λιμένων",
+    "translation": "Zone Manager: Cyprus Ports Authority<br><br>Phone: 24815225 / 99628038<br><br>Email: chatheocharous@cpa.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area are allowed only with special permission from the Ports Authority."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γιαννάκης Ιωάννου (Βοηθός Διευθυντής Δίκτυα, ΓεωΔιαΣ), Σόλων Νικολάου (Β. Τοπογράφος Μηχανικός, ΓεωΔιαΣ)<br><br>Τηλέφωνο Επικοινωνίας: 22201440, 22201826<br><br>Ηλεκτρονική Διεύθυνση: UAVsec@eac.com.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Πτήσεις σε αυτήν την περιοχή μπορούν να πραγματοποιηθούν κατόπιν ειδικής άδειας από την Α.Η.Κ",
+    "translation": "Zone Manager: Giannakis Ioannou (Assistant Manager, Networks, GeoDiaS), Solon Nikolaou (Assistant Surveying Engineer, GeoDiaS)<br><br>Phone: 22201440, 22201826<br><br>Email: UAVsec@eac.com.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area are allowed only with special permission from the EAC (Electricity Authority of Cyprus)."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Στέφανος Mιχαήλ<br><br>Τηλέφωνο Επικοινωνίας: 23200084<br><br>Ηλεκτρονική Διεύθυνση: drones@shso.org.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από τo ΟΚΥπΥ . Υποβολή αίτησης τουλάχιστον 1 βδομάδα πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Stefanos Michail<br><br>Phone: 23200084<br><br>Email: drones@shso.org.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from SHSO (State Health Services Organisation). Apply at least 1 week before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Χριστίνα Πογιατζή<br><br>Τηλέφωνο Επικοινωνίας: 25801390<br><br>Ηλεκτρονική Διεύθυνση: drones@shso.org.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από τo ΟΚΥπΥ . Υποβολή αίτησης τουλάχιστον 1 βδομάδα πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Christina Pogiatzi<br><br>Phone: 25801390<br><br>Email: drones@shso.org.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from SHSO (State Health Services Organisation). Apply at least 1 week before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Κωνσταντίνος Κλεοβούλου<br><br>Τηλέφωνο Επικοινωνίας: 26803104<br><br>Ηλεκτρονική Διεύθυνση: drones@shso.org.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από τo ΟΚΥπΥ . Υποβολή αίτησης τουλάχιστον 1 βδομάδα πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Konstantinos Kleovoulou<br><br>Phone: 26803104<br><br>Email: drones@shso.org.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from SHSO (State Health Services Organisation). Apply at least 1 week before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Υπηρεσία ΣμηΕΑ - ΤΠΑ<br><br>Τηλέφωνο Επικοινωνίας: 22 404 167 / 22 404 121<br><br>Ηλεκτρονική Διεύθυνση: info@drones.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                              'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/02/Airport_UAS_Geo_Zone_-Request_Form_004.pdf<br><br>Για πληροφορίες αναφορικά με τους όρους πρόσβασης της ζώνης επισκευθείτε την ιστοσελίδα www.drones.gov.cy",
+    "translation": "Zone Manager: UAS Service - DCA (Department of Civil Aviation)<br><br>Phone: 22 404 167 / 22 404 121<br><br>Email: info@drones.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/02/Airport_UAS_Geo_Zone_-Request_Form_004.pdf<br><br>For information on this zone's access conditions, visit www.drones.gov.cy"
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Παναγιώτης Ιωαννίδης<br><br>Τηλέφωνο Επικοινωνίας: 22702432<br><br>Ηλεκτρονική Διεύθυνση: panayiotis.ioannides@cyta.com.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από τη CYTA. Υποβολή αίτησης τουλάχιστον 2 βδομάδες πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Panayiotis Ioannides<br><br>Phone: 22702432<br><br>Email: panayiotis.ioannides@cyta.com.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from Cyta. Apply at least 2 weeks before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ            <br><br>'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗ                  <br><br> 'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗ                <br><br>  'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ            <br><br>   'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗ                         <br><br>    'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                   <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                     <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                           <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx                                                                                                       <br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                      <br><br>         'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                             <br><br>    'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                          <br><br>       'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                           <br><br>    'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                              <br><br>   'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                            <br><br>     'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                        <br><br>         'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx                                                                                                      <br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                         <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                       <br><br>        'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                         <br><br>        'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx                                                                                                       <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                        <br><br>       'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                           <br><br>     'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                         <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                           <br><br>    'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                         <br><br>        'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx                                                                                       <br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                           <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx                                                                            <br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                          <br><br>     'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης:  <br><br>                                                                                                                'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: <br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                      <br><br>           'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                             <br><br>  'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                            <br><br>      'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                            <br><br>     'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                         <br><br>        'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                          <br><br>       'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx <br><br>Πτήση ΣμηΕΑ, μόνο κατόπιν έγκρισης του Διαχειριστή. Δύναται να λειτουργούν ηλεκτρονικά αντίμετρα πτήσης ΣμηΕΑ, που πιθανόν να προκαλέσουν την πτώση αυτού.",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/11/National_Guard_Airspace_-Reservation_-Request_Form-.docx<br><br>UAS flights only with the approval of the zone manager. Electronic counter-UAS measures may be active and could cause the drone to crash."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Αρετή Γεωργίου<br><br>Τηλέφωνο Επικοινωνίας: 22 406 104<br><br>Ηλεκτρονική Διεύθυνση: dirsecretary@prisons.mjpo.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από το Τμήμα Κεντρικών Φυλακών. Υποβολή αίτησης τουλάχιστον 2 βδομάδες πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Areti Georgiou<br><br>Phone: 22 406 104<br><br>Email: dirsecretary@prisons.mjpo.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from the Prison Department. Apply at least 2 weeks before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Αρχή Λιμένων Κύπρου<br><br>Τηλέφωνο Επικοινωνίας: 24815225 / 99628038<br><br>Ηλεκτρονική Διεύθυνση: chatheocharous@cpa.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Πτήσεις σε αυτήν την περιοχή μπορούν να πραγματοποιηθούν κατόπιν ειδικής άδειας από την αρχή Λιμένων",
+    "translation": "Zone Manager: Cyprus Ports Authority<br><br>Phone: 24815225 / 99628038<br><br>Email: chatheocharous@cpa.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area are allowed only with special permission from the Ports Authority."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Μάμας Βασιλείου<br><br>Τηλέφωνο Επικοινωνίας: 22407301<br><br>Ηλεκτρονική Διεύθυνση: president@parliament.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από την Φρουρά του Προέδρου της Βουλής . Υποβολή αίτησης τουλάχιστον 2 βδομάδες πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Mamas Vasileiou<br><br>Phone: 22407301<br><br>Email: president@parliament.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from the Guard of the President of the House of Representatives. Apply at least 2 weeks before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Λάζαρος Ελευθερίου - ΥΠΕΞ<br><br>Τηλέφωνο Επικοινωνίας: 22651105<br><br>Ηλεκτρονική Διεύθυνση: leleftheriou@mfa.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Πτήσεις σε αυτήν την περιοχή μπορούν να πραγματοποιηθούν κατόπιν ειδικής άδειας από το ΥΠΕΞ",
+    "translation": "Zone Manager: Lazaros Eleftheriou - Ministry of Foreign Affairs<br><br>Phone: 22651105<br><br>Email: leleftheriou@mfa.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area are allowed only with special permission from the Ministry of Foreign Affairs."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Λάζαρος Ελευθερίου - ΥΠΕΞ<br><br>Τηλέφωνο Επικοινωνίας: 22651105<br><br>Ηλεκτρονική Διεύθυνση: leleftheriou@mfa.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Lazaros Eleftheriou - Ministry of Foreign Affairs<br><br>Phone: 22651105<br><br>Email: leleftheriou@mfa.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΠΑΝΤΕΛΗΣ ΙΟΡΔΑΝΟΥΣ<br><br>Τηλέφωνο Επικοινωνίας: 22867438 / 22867400<br><br>Ηλεκτρονική Διεύθυνση: info@presidency.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από την Προεδρική Φρουρά . Υποβολή αίτησης τουλάχιστον 2 βδομάδες πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Pantelis Iordanous<br><br>Phone: 22867438 / 22867400<br><br>Email: info@presidency.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from the Presidential Guard. Apply at least 2 weeks before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Κωνσταντίνος Χειμώνας<br><br>Τηλέφωνο Επικοινωνίας: 22603141<br><br>Ηλεκτρονική Διεύθυνση: drones@shso.org.cy<br><br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>Για πτήσεις σε αυτήν την περιοχή, απαιτείται άδεια από τo ΟΚΥπΥ . Υποβολή αίτησης τουλάχιστον 1 βδομάδα πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Konstantinos Cheimonas<br><br>Phone: 22603141<br><br>Email: drones@shso.org.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from SHSO (State Health Services Organisation). Apply at least 1 week before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Υπηρεσία ΣμηΕΑ - ΤΠΑ<br><br>Τηλέφωνο Επικοινωνίας: 22 404 167 / 22 404 121<br><br>Ηλεκτρονική Διεύθυνση: info@drones.gov.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ                                                                                                        <br><br>       'Eντυπο Αίτησης: https://drones.gov.cy/wp-content/uploads/2024/02/Airport_UAS_Geo_Zone_-Request_Form_004.pdf<br><br>Για πληροφορίες αναφορικά με τους όρους πρόσβασης της ζώνης επισκευθείτε την ιστοσελίδα www.drones.gov.cy",
+    "translation": "Zone Manager: UAS Service - DCA (Department of Civil Aviation)<br><br>Phone: 22 404 167 / 22 404 121<br><br>Email: info@drones.gov.cy<br><br>Access Conditions: AUTHORISATION<br><br>Application Form: https://drones.gov.cy/wp-content/uploads/2024/02/Airport_UAS_Geo_Zone_-Request_Form_004.pdf<br><br>For information on this zone's access conditions, visit www.drones.gov.cy"
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Φίλιππος Φιλίππου<br><br>Τηλέφωνο Επικοινωνίας: 22402177<br><br>Ηλεκτρονική Διεύθυνση: drones@shso.org.cy<br><br>Όροι Πρόσβασης: ΕΞΟΥΣΙΟΔΟΤΗΣΗ<br><br>ΟΚΥπΥ . Υποβολή αίτησης τουλάχιστον 1 βδομάδα πριν από την προγραμματισμένη ημερομηνία.",
+    "translation": "Zone Manager: Filippos Filippou<br><br>Phone: 22402177<br><br>Email: drones@shso.org.cy<br><br>Access Conditions: AUTHORISATION<br><br>Flights in this area require permission from SHSO (State Health Services Organisation). Apply at least 1 week before the planned date."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΑΜΜΟΧΩΣΤΟΥ <br><br>Τηλέφωνο Επικοινωνίας: 23-803001<br><br>Ηλεκτρονική Διεύθυνση: famdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Famagusta District Police Director<br><br>Phone: 23-803001<br><br>Email: famdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΛΑΡΝΑΚΑΣ <br><br>Τηλέφωνο Επικοινωνίας: 24-804001<br><br>Ηλεκτρονική Διεύθυνση: lardiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Larnaca District Police Director<br><br>Phone: 24-804001<br><br>Email: lardiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΛΕΜΕΣΟΥ <br><br>Τηλέφωνο Επικοινωνίας: 25-805001<br><br>Ηλεκτρονική Διεύθυνση: limdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Limassol District Police Director<br><br>Phone: 25-805001<br><br>Email: limdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης:ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΛΕΥΚΩΣΙΑΣ<br><br>Τηλέφωνο Επικοινωνίας: 22-607701<br><br>Ηλεκτρονική Διεύθυνση: nicdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Nicosia District Police Director<br><br>Phone: 22-607701<br><br>Email: nicdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης:ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΜΟΡΦΟΥ<br><br>Τηλέφωνο Επικοινωνίας: 22-802501<br><br>Ηλεκτρονική Διεύθυνση: morfoudiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Morphou District Police Director<br><br>Phone: 22-802501<br><br>Email: morfoudiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΠΑΦΟΥ <br><br>Τηλέφωνο Επικοινωνίας: 26-806001<br><br>Ηλεκτρονική Διεύθυνση: pafdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Paphos District Police Director<br><br>Phone: 26-806001<br><br>Email: pafdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΤΜΗΜΑΤΟΣ ΔΙΟΙΚΗΣΗΣ ΚΑΙ ΑΝΘΡΩΠΙΝΟΥ ΔΥΝΑΜΙΚΟ<br><br>Τηλέφωνο Επικοινωνίας: 22-808015<br><br>Ηλεκτρονική Διεύθυνση: dpta@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Police Director, Administration and Human Resources Department<br><br>Phone: 22-808015<br><br>Email: dpta@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΛΕΥΚΩΣΙΑΣ<br><br>Τηλέφωνο Επικοινωνίας: 22-607701 <br><br>Ηλεκτρονική Διεύθυνση: nicdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Nicosia District Police Director<br><br>Phone: 22-607701<br><br>Email: nicdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΜΟΡΦΟΥ <br><br>Τηλέφωνο Επικοινωνίας: 22-802501<br><br>Ηλεκτρονική Διεύθυνση:morfoudiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Morphou District Police Director<br><br>Phone: 22-802501<br><br>Email: morfoudiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΠΑΦΟΥ<br><br>Τηλέφωνο Επικοινωνίας: 26-806001<br><br>Ηλεκτρονική Διεύθυνση: pafdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Paphos District Police Director<br><br>Phone: 26-806001<br><br>Email: pafdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΔΙΟΙΚΗΤΗΣ ΜΜΑΔ<br><br><br>Τηλέφωνο Επικοινωνίας: 22-808301<br><br>Ηλεκτρονική Διεύθυνση: eru.registry@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Commander, ERU (Emergency Response Unit)<br><br>Phone: 22-808301<br><br>Email: eru.registry@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Γενικό Επιτελείο Εθνικής Φρουράς - Διεύθυνση Στρατιωτικών Πληροφοριών<br><br>Τηλέφωνο Επικοινωνίας: 22417201 / 22417214<br><br>Ηλεκτρονική Διεύθυνση: displiinfo@army.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: National Guard General Staff - Military Intelligence Directorate<br><br>Phone: 22417201 / 22417214<br><br>Email: displiinfo@army.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης:ΑΣΤΥΝΟΜΙΚΟΣ ΔΙΕΥΘΥΝΤΗΣ ΕΠΑΡΧΙΑΣ ΛΕΥΚΩΣΙΑΣ<br><br>Τηλέφωνο Επικοινωνίας: 22-607701 <br><br>Ηλεκτρονική Διεύθυνση: nicdiv@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Nicosia District Police Director<br><br>Phone: 22-607701<br><br>Email: nicdiv@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΔΙΟΙΚΗΤΗΣ ΥΠΗΡΕΣΙΑΣ ΑΛΛΟΔΑΠΩΝ & ΜΕΤΑΝΑΣΤΕΥΣΗΣ<br><br>Τηλέφωνο Επικοινωνίας: 22-808888<br><br>Ηλεκτρονική Διεύθυνση: aidhqregistry@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Commander, Aliens and Immigration Service<br><br>Phone: 22-808888<br><br>Email: aidhqregistry@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΔΙΕΥΘΥΝΤΗΣ Δ.Ε.Ε. & Δ.Α.Σ.<br><br>Τηλέφωνο Επικοινωνίας: 22-607801<br><br>Ηλεκτρονική Διεύθυνση: euipcd@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: Director, EU & International Police Cooperation Directorate<br><br>Phone: 22-607801<br><br>Email: euipcd@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: ΔΙΟΙΚΗΤΗΣ ΜΟΝΑΔΑΣ ΠΡΟΕΔΡΙΚΗΣ ΦΡΟΥΡΑΣ<br><br>Τηλέφωνο Επικοινωνίας: 22-802144<br><br>Ηλεκτρονική Διεύθυνση: presguard@police.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ<br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχήv",
+    "translation": "Zone Manager: Commander, Presidential Guard Unit<br><br>Phone: 22-802144<br><br>Email: presguard@police.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Υπηρεσία ΣμηΕΑ - ΤΠΑ<br><br>Τηλέφωνο Επικοινωνίας: 22 404 167 / 22 404 121<br><br>Ηλεκτρονική Διεύθυνση: info@drones.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ                                                                                                         <br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: UAS Service - DCA (Department of Civil Aviation)<br><br>Phone: 22 404 167 / 22 404 121<br><br>Email: info@drones.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  },
+  {
+    "original": "Διαχειριστής Ζώνης: Υπηρεσία ΣμηΕΑ - ΤΠΑ<br><br>Τηλέφωνο Επικοινωνίας: 22 404 167 / 22 404 121<br><br>Ηλεκτρονική Διεύθυνση: info@drones.gov.cy<br><br>Όροι Πρόσβασης: ΑΠΑΓΟΡΕΥΜΕΝΗ ΠΕΡΙΟΧΗ                                                                                                           <br><br>Απαγορεύονται οι πτήσεις ΣμηΕΑ σε αυτήν την περιοχή",
+    "translation": "Zone Manager: UAS Service - DCA (Department of Civil Aviation)<br><br>Phone: 22 404 167 / 22 404 121<br><br>Email: info@drones.gov.cy<br><br>Access Conditions: PROHIBITED AREA<br><br>UAS flights are prohibited in this area."
+  }
+]
