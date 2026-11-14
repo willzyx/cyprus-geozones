@@ -16,6 +16,10 @@ the nearest zone.
 - The nearest zone is highlighted and shown in the bottom panel with the
   distance to its boundary — or a red "You are inside the zone" warning when you
   are within one.
+- OpenStreetMap, OpenTopoMap (contour lines), Esri satellite and hybrid
+  (satellite with roads and place names) base maps, with a metric scale bar.
+- The map is limited to Cyprus and the sea around it, so it cannot be dragged
+  away by accident.
 
 ## Running locally
 
@@ -33,7 +37,8 @@ python3 -m http.server 8000
 Everything lives in [`index.html`](index.html): markup, styles, and a single
 vanilla-JS IIFE. There are no dependencies to install — [Leaflet
 1.9.4](https://leafletjs.com/) and [Turf.js 6](https://turfjs.org/) are loaded
-from a CDN, and map tiles come from OpenStreetMap.
+from a CDN, and map tiles come from OpenStreetMap, OpenTopoMap and Esri World
+Imagery.
 
 On load, the KML is fetched and parsed in the browser with `DOMParser`: the
 parser builds an index of `<Style>` and `<StyleMap>` elements, converts KML

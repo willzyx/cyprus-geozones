@@ -88,6 +88,9 @@
       white-space: normal;
       font-size: 11px;
     }
+
+    /* The panel covers the bottom edge, so the scale bar sits above it, level with the locate button. */
+    .leaflet-bottom.leaflet-left { left: 7px; bottom: 125px; }
   </style>
 </head>
 <body>
@@ -104,16 +107,77 @@
     'use strict';
 
     var CYPRUS_CENTER = [35.05, 33.2];
+    // Cyprus with enough sea around it to fill a phone screen at MIN_ZOOM; the map cannot leave this box.
+    var MAX_BOUNDS = L.latLngBounds([32.6, 30.4], [37.6, 36.0]);
+    var MIN_ZOOM = 8;
     var KML_URL = 'CYPRUS_GEO_ZONES_MAP_ver09.kml';
     var TRANSLATIONS_URL = 'zones-en.json';
+    var BASE_LAYER_KEY = 'cyprus-geozones:base-layer';
 
-    var map = L.map('map', { zoomControl: true, attributionControl: false }).setView(CYPRUS_CENTER, 9);
-    L.control.attribution({ position: 'topright', prefix: false }).addTo(map);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    var map = L.map('map', {
+      zoomControl: true,
+      attributionControl: false,
       maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' +
-        ' | <a href="https://drones.gov.cy/geo-zones-map/" target="_blank" rel="noopener">drones.gov.cy</a>'
-    }).addTo(map);
+      maxBounds: MAX_BOUNDS,
+      maxBoundsViscosity: 1
+    }).setView(CYPRUS_CENTER, 9);
+
+    // Never zoom out further than MAX_BOUNDS can fill the screen: with a view larger
+    // than the bounds the map would jump around while being dragged.
+    function updateMinZoom() {
+      map.setMinZoom(Math.max(MIN_ZOOM, map.getBoundsZoom(MAX_BOUNDS, true)));
+    }
+    updateMinZoom();
+    map.on('resize', updateMinZoom);
+
+    // Roads and place names of the hybrid base map: above the imagery, below the zones.
+    map.createPane('labels');
+    map.getPane('labels').style.zIndex = 250;
+    map.getPane('labels').style.pointerEvents = 'none';
+
+    var OSM_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    var ZONES_ATTRIBUTION = ' | <a href="https://drones.gov.cy/geo-zones-map/" target="_blank" rel="noopener">drones.gov.cy</a>';
+
+    function esriLayer(service, options) {
+      return L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/' + service + '/MapServer/tile/{z}/{y}/{x}', options);
+    }
+    function satelliteLayer() {
+      return esriLayer('World_Imagery', {
+        maxNativeZoom: 18,  // zoom 19 exists only in towns; elsewhere Esri serves a "no data" placeholder
+        maxZoom: 19,
+        attribution: 'Imagery &copy; Esri, Maxar, Earthstar Geographics' + ZONES_ATTRIBUTION
+      });
+    }
+
+    var baseLayers = {
+      'OpenStreetMap': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: OSM_ATTRIBUTION + ZONES_ATTRIBUTION
+      }),
+      'Topographic': L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxNativeZoom: 17,
+        maxZoom: 19,
+        attribution: OSM_ATTRIBUTION + ', SRTM | Style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)' + ZONES_ATTRIBUTION
+      }),
+      'Satellite': satelliteLayer(),
+      'Hybrid': L.layerGroup([
+        satelliteLayer(),
+        esriLayer('Reference/World_Transportation', { maxZoom: 19, pane: 'labels' }),
+        esriLayer('Reference/World_Boundaries_and_Places', { maxZoom: 19, pane: 'labels' })
+      ])
+    };
+    L.control.layers(baseLayers, null, { position: 'topright' }).addTo(map);
+    // Must exist before the first base layer is added: Leaflet never drops the attribution
+    // of a layer that was already on the map when the control was created.
+    L.control.attribution({ position: 'topright', prefix: false }).addTo(map);
+    L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
+
+    var savedBase = null;
+    try { savedBase = localStorage.getItem(BASE_LAYER_KEY); } catch (e) { /* storage unavailable */ }
+    (baseLayers[savedBase] || baseLayers.OpenStreetMap).addTo(map);
+    map.on('baselayerchange', function (e) {
+      try { localStorage.setItem(BASE_LAYER_KEY, e.name); } catch (err) { /* storage unavailable */ }
+    });
 
     var zonesLayerGroup = L.layerGroup().addTo(map);
     var panelContent = document.getElementById('panel-content');
@@ -340,6 +404,11 @@
       renderPanel(best, bestDist, inside);
     }
 
+    // Outside MAX_BOUNDS the map stays on Cyprus; the panel still reports the distance.
+    function centerOnUser(zoom) {
+      if (lastPosition && MAX_BOUNDS.contains(lastPosition)) map.setView(lastPosition, zoom);
+    }
+
     function onPosition(pos) {
       var lat = pos.coords.latitude;
       var lng = pos.coords.longitude;
@@ -353,7 +422,7 @@
         accuracyCircle = L.circle([lat, lng], {
           radius: accuracy, color: '#1976d2', weight: 1, fillOpacity: 0.08, interactive: false
         }).addTo(map);
-        map.setView([lat, lng], 13);
+        centerOnUser(13);
       } else {
         userMarker.setLatLng([lat, lng]);
         accuracyCircle.setLatLng([lat, lng]);
@@ -381,7 +450,7 @@
 
     locateBtn.addEventListener('click', function () {
       if (lastPosition) {
-        map.setView(lastPosition, 15);
+        centerOnUser(15);
       } else if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(onPosition, onPositionError, { enableHighAccuracy: true });
       }
